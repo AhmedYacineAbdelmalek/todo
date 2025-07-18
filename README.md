@@ -33,26 +33,41 @@ A powerful, intelligent command-line todo application built with Go and Cobra. F
 
 ## 📦 Installation
 
-### Download Binary (Recommended)
+### Quick Install (Recommended)
 ```bash
-# Download the latest release for your platform
-# Linux
-curl -L https://github.com/yourusername/todo/releases/latest/download/todo-linux-amd64 -o todo
+# One-line installer (Linux/macOS)
+curl -sSL https://raw.githubusercontent.com/AhmedYacineAbdelmalek/todo/main/install.sh | bash
+
+# Or download and run
+curl -L https://raw.githubusercontent.com/AhmedYacineAbdelmalek/todo/main/install.sh -o install.sh
+chmod +x install.sh
+./install.sh
+```
+
+### Manual Download
+```bash
+# Linux (x64)
+curl -L https://github.com/AhmedYacineAbdelmalek/todo/releases/latest/download/todo-linux-amd64 -o todo
 chmod +x todo
 sudo mv todo /usr/local/bin/
 
-# macOS
-curl -L https://github.com/yourusername/todo/releases/latest/download/todo-darwin-amd64 -o todo
+# macOS (Intel)
+curl -L https://github.com/AhmedYacineAbdelmalek/todo/releases/latest/download/todo-darwin-amd64 -o todo
+chmod +x todo
+sudo mv todo /usr/local/bin/
+
+# macOS (Apple Silicon)
+curl -L https://github.com/AhmedYacineAbdelmalek/todo/releases/latest/download/todo-darwin-arm64 -o todo
 chmod +x todo
 sudo mv todo /usr/local/bin/
 
 # Windows
-# Download todo-windows-amd64.exe from releases
+# Download todo-windows-amd64.exe from releases and add to PATH
 ```
 
 ### Build from Source
 ```bash
-git clone https://github.com/yourusername/todo.git
+git clone https://github.com/AhmedYacineAbdelmalek/todo.git
 cd todo/todo
 go build -o todo
 ```
@@ -275,4 +290,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ for productive developers**
+**Made by yasssin29 with ❤️ for productive developers**
